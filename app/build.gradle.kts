@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 }
-
+val compose_version = "1.5.1"
 android {
     namespace = "com.example.quoteapp"
     compileSdk = 34
@@ -66,4 +66,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation ("androidx.compose.material:material-icons-extended:$compose_version")
+
 }
